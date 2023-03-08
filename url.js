@@ -769,5 +769,6 @@ exports.parse = urlParse;
 exports.resolve = urlResolve;
 exports.resolveObject = urlResolveObject;
 exports.format = urlFormat;
+exports.fileURLToPath = url => new URL('', url).pathname;
 
 exports.Url = Url;
